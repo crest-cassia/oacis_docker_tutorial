@@ -1,7 +1,7 @@
 # oacis_docker_tutorial
 
 [![GitHub version](https://badge.fury.io/gh/crest-cassia%2Foacis_docker_tutorial.svg)](https://badge.fury.io/gh/crest-cassia%2Foacis_docker_tutorial)
-[![docker image](http://img.shields.io/badge/docker_image-ready-brightgreen.svg)](https://hub.docker.com/r/oacis/oacis/)
+[![docker image](http://img.shields.io/badge/docker_image-ready-brightgreen.svg)](https://hub.docker.com/r/oacis/oacis_tutorial/)
 [![Build Status](https://travis-ci.org/crest-cassia/oacis_docker_tutorial.svg?branch=develop)](https://travis-ci.org/crest-cassia/oacis_docker_tutorial)
 
 You can experience [OAICS](https://github.com/crest-cassia/oacis).
@@ -16,7 +16,7 @@ You can experience [OAICS](https://github.com/crest-cassia/oacis).
 2. Start an oacis instance
     ```sh
     docker run --name oacis_tutorial -p 3000:3000 -dt oacis/oacis_tutorial
-    docker logs -f oacis # wait for boot. exit via Ctrl + C
+    docker logs -f oacis_tutorial # wait for boot. exit via Ctrl + C
     ```
     - OACIS is ready when you get the following logs.
         ```
