@@ -19,6 +19,7 @@ You can experience [OAICS](https://github.com/crest-cassia/oacis).
     docker logs -f oacis_tutorial # wait for boot. exit via Ctrl + C
     ```
     - OACIS is ready when you get the following logs.
+
         ```
         Progress: |====================================================================|
         bundle exec rails s -d -b 0.0.0.0
@@ -130,5 +131,5 @@ Note: `iptables` configurations are deleted when host OS reboots.
 
   - [oacis_docker_tutorial](https://github.com/crest-cassia/oacis_docker_tutorial) is a part of [OACIS](https://github.com/crest-cassia/oacis).
   - OACIS and oacis_docker_tutorial are published under the term of the MIT License (MIT).
-  - Copyright (c) 2014,2015,2016 RIKEN, AICS
+  - Copyright (c) 2014-2016 RIKEN, AICS
 
