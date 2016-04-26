@@ -47,6 +47,8 @@ You can experience [OAICS](https://github.com/crest-cassia/oacis).
 
     - Several simulators have been installed.
     - You can see how to use each simulator on About tab of Simulator page
+    ![docket_tool_ip](https://github.com/crest-cassia/oacis_docker/wiki/images/tutorial_toppage.png)
+    ![docket_tool_ip](https://github.com/crest-cassia/oacis_docker/wiki/images/tutorial_result.png)
 
 ## Stop and Restart
 
