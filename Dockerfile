@@ -25,5 +25,5 @@ EXPOSE 3000
 VOLUME ["/data/db"]
 VOLUME ["/home/oacis/oacis/public/Result_development"]
 
-CMD ["bash","-c","/home/oacis/tutorial/oacis_tutorial_setup.sh & ./oacis_docker_cmd/oacis_start.sh"]
+CMD ["bash","-c","./tutorial/oacis_tutorial_setup.sh && ./oacis_start.sh"]
 
