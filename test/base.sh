@@ -18,7 +18,7 @@ function cleanup() {
   dockerps=`docker ps -a | grep "${OACIS_CONTAINER_NAME}[\ ]*$"`
   if [ -n "$dockerps" ]
   then
-    docker rm ${OACIS_CONTAINER_NAME}
+    docker rm -v ${OACIS_CONTAINER_NAME}
   fi
 }
 trap cleanup EXIT ERR
