@@ -2,7 +2,7 @@
 die() { echo "$@"; exit 1; }
 
 tutorial_name=`basename ${0%.sh}`
-config_file="~/oacis/public/Result_development/work/plham/config/${tutorial_name}.json"
+config_file=~/oacis/public/Result_development/work/plham/config/${tutorial_name}.json
 binary=~/bin/plham/bin/${tutorial_name}.out
 plham_home=~/plham
 

@@ -30,6 +30,7 @@ echo "{
 " > simulator.json
 
 ~/oacis/bin/oacis_cli create_simulator -h host.json -i simulator.json -o simulator_id.json
-~/oacis/bin/oacis_cli create_parameter_sets -s simulator_id.json -i '{"l":200,"v":5,"rho":0.3,"p":0.1,"t_init":100,"t_measure":300}' -o ps_ids.json
-rm host.json simulator.json simulator_id.json ps_ids.json
+#~/oacis/bin/oacis_cli create_parameter_sets -s simulator_id.json -i '{"l":200,"v":5,"rho":0.3,"p":0.1,"t_init":100,"t_measure":300}' -o ps_ids.json
+#rm host.json simulator.json simulator_id.json ps_ids.json
+rm host.json simulator.json simulator_id.json
 
