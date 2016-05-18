@@ -9,7 +9,7 @@ host_id=${host_id#ObjectId(\"}
 echo "[{\"id\": \"$host_id\"}]" > host.json
 
 echo "{
-  \"name\": \"Plham_Tutorial_01_CI2002Main\",
+  \"name\": \"Plham_CI2002\",
   \"command\": \"$runner_path\",
   \"support_input_json\": false,
   \"support_mpi\": false,
