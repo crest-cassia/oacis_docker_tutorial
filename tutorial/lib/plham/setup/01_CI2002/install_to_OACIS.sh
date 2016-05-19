@@ -31,9 +31,9 @@ echo "{
   \"name\" : \"Timeseries_Plot\",
   \"type\" : \"on_run\",
   \"auto_run\" : \"no\",
-  \"files_to_copy\" : \"output.dat\",
+  \"files_to_copy\" : \"_stdout.txt\",
   \"description\":\"### CI2002Main\\r\\n\\r\\n- [Visit developer site](https://github.com/plham/plham)\",
-  \"command\" : \"Rscript /home/oacis/plham/samples/CI2002/plot.R _input/output.dat output.png\",
+  \"command\" : \"$analyzer_path\",
   \"support_input_json\" : true,
   \"support_mpi\" : false,
   \"support_omp\" : false,
@@ -41,10 +41,11 @@ echo "{
   \"pre_process_script\" : null,
   \"executable_on_ids\": [],
   \"parameter_definitions\": [
+    {\"key\": \"FileName\",\"type\": \"String\",\"default\": \"output.png\",\"description\": \"\"}
   ]
 }
 " > analyzer.json
 ~/oacis/bin/oacis_cli create_analyzer -h host.json -s simulator_id.json -i analyzer.json -o analyzer_id.json
 
 #clean up
-rm host.json simulator.json simulator_id.json
+rm host.json simulator.json simulator_id.json analyzer_id.json
