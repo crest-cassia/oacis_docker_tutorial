@@ -33,7 +33,7 @@ echo "{
   \"type\" : \"on_run\",
   \"auto_run\" : \"no\",
   \"files_to_copy\" : \"_stdout.txt\",
-  \"description\":\"### CI2002Main\\r\\n\\r\\n- [Visit developer site](https://github.com/plham/plham)\",
+  \"description\":\"make a timeseries plot\",
   \"command\" : \"$analyzer_path\",
   \"support_input_json\" : false,
   \"support_mpi\" : false,
