@@ -17,6 +17,7 @@ ADD tutorial /home/oacis/tutorial/
 RUN /bin/bash -l -c "/home/oacis/tutorial/docker_build/setup_00_x10.sh"
 RUN /bin/bash -l -c "/home/oacis/tutorial/docker_build/setup_00_R.sh"
 RUN /bin/bash -l -c "/home/oacis/tutorial/docker_build/setup_01_nagel_schreckenberg.sh"
+RUN /bin/bash -l -c "cd /home/oacis; git checkout -b add_cli_analyzer origin/add_cli_analyzer"
 RUN /bin/bash -l -c "/home/oacis/tutorial/docker_build/setup_01_plham.sh"
 
 USER root
