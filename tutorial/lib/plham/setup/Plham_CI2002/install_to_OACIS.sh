@@ -19,6 +19,7 @@ echo "{
   \"executable_on_ids\": [],
   \"description\":\"### CI2002Main\\r\\n\\r\\n- [Visit developer site](https://github.com/plham/plham)\",
   \"parameter_definitions\": [
+    {\"key\": \"executable\",\"type\": \"String\",\"default\": \"~/bin/plham/bin/CI2002.out\",\"description\": \"\"},
     {\"key\": \"fundamentalWeight\",\"type\": \"Float\",\"default\": 1.0,\"description\": \"\"},
     {\"key\": \"chartWeight\",\"type\": \"Float\",\"default\": 0.0,\"description\": \"\"},
     {\"key\": \"noiseWeight\",\"type\": \"Float\",\"default\": 1.0,\"description\": \"\"}
@@ -34,7 +35,7 @@ echo "{
   \"files_to_copy\" : \"_stdout.txt\",
   \"description\":\"### CI2002Main\\r\\n\\r\\n- [Visit developer site](https://github.com/plham/plham)\",
   \"command\" : \"$analyzer_path\",
-  \"support_input_json\" : true,
+  \"support_input_json\" : false,
   \"support_mpi\" : false,
   \"support_omp\" : false,
   \"print_version_command\" : \"cd ~/plham; git describe --always\",
