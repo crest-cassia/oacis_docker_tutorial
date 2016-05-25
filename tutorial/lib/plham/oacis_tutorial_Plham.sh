@@ -2,12 +2,14 @@
 
 tutorial_name=plham
 
-if [ ! -d /home/oacis/oacis/public/Result_development/work/${tutorial_name} ]
+if [ ! -f /home/oacis/oacis/public/Result_development/work/${tutorial_name} ]
 then
-  #copy files
-  su - oacis -c "rsync -a ~/tutorial/lib/plham/Result_development/work/${tutorial_name} ~/oacis/public/Result_development/work/"
   #install to OACIS
-  su - oacis -c "~/tutorial/lib/plham/setup/01_CI2002Main/install_to_OACIS.sh"
+  su - oacis -c "~/tutorial/lib/plham/setup/Plham_CI2002/install_to_OACIS.sh"
+  #change file permittion
+  su - oacis -c "chmod +x ~/plham/samples/CI2002/oacis/*.sh"
+  #touch
+  su - oacis -c "if [ ! -d ~/oacis/public/Result_development/work ]; then mkdir ~/oacis/public/Result_development/work; fi; cd ~/plham; git describe --always >> ~/oacis/public/Result_development/work/${tutorial_name}"
 else
   echo "tutorial(${tutorial_name}) has been restored."
 fi
