@@ -18,6 +18,9 @@ RUN /bin/bash -l -c "/home/oacis/tutorial/docker_build/setup_00_x10.sh"
 RUN /bin/bash -l -c "/home/oacis/tutorial/docker_build/setup_00_R.sh"
 RUN /bin/bash -l -c "/home/oacis/tutorial/docker_build/setup_01_nagel_schreckenberg.sh"
 RUN /bin/bash -l -c "/home/oacis/tutorial/docker_build/setup_01_plham.sh"
+RUN echo "export PS1='\u\$ '" >> /home/oacis/.bashrc
+ADD install-packages.R /home/oacis/
+RUN Rscript install-packages.R; rm install-packages.R*; echo "export R_HOME=/usr/lib/R" >> /home/oacis/.bashrc
 
 USER root
 RUN chown -R oacis:oacis /home/oacis/tutorial
